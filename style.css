@@ -1,0 +1,22 @@
+/* Full white background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  /* Text styling */
+  #text {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px;
+    opacity: 1; /* Fully visible initially */
+    transition: opacity 2s ease-in-out; /* Smooth fade-out */
+  }
+  

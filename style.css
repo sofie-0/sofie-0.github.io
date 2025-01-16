@@ -16,7 +16,7 @@ body {
     font-weight: bold;
     color: black;
     margin: 20px;
-    opacity: 1; /* Fully visible initially */
-    transition: opacity 2s ease-in-out; /* Smooth fade-out */
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 2s ease-in-out; /* Smooth fade-out effect */
   }
   

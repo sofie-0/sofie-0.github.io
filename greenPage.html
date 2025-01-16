@@ -3,83 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Green Page</title>
+  <title>Pink Page</title>
   <style>
     body {
-      background-color: #77DD77; /* Pastel Green */
+      background-color: #77DD77; /* Pastel Pink */
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
       height: 100vh;
       display: flex;
+      flex-direction: column;  /* Stack elements vertically */
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      position: relative;
-      transition: background-color 2s ease, color 2s ease; /* Smooth transition */
+      margin: 0;
     }
-
     h1 {
-      font-size: 3rem;
-      z-index: 2; /* Keep text above the fire effect */
-      transition: color 2s ease; /* Smooth transition for text color */
+      font-size: 2rem;
+      margin-bottom: 20px; /* Add space between text and gif */
     }
-
-    /* Fire animation for the background */
-    @keyframes fireEffect {
-      0% {
-        background-color: #77DD77; /* Pastel green */
-      }
-      50% {
-        background-color: #FF0000; /* Bright red (fire) */
-        color: black; /* Change text color to black when fire starts */
-      }
-      100% {
-        background-color: #000000; /* Burnt black */
-        color: black; /* Ensure text stays black */
-      }
+    #gif {
+      width: 50vw;  /* Make the width 50% of the viewport width */
+      height: auto; /* Maintain the aspect ratio */
+      max-width: 400px; /* Limit maximum width to 400px */
     }
-
-    /* Apply fire effect to the body */
-    body {
-      animation: fireEffect 20s forwards; /* Slow burning effect over 20 seconds */
-    }
-
-    /* Simulate fire embers or burning texture */
-    .embers {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('https://www.transparenttextures.com/patterns/burnt-paper.png') repeat;
-      animation: burnEmbers 20s forwards; /* Sync ember effect with burn duration */
-    }
-
-    /* Add an animation to simulate the embers slowly fading in */
-    @keyframes burnEmbers {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.5;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
   </style>
 </head>
 <body>
   <h1>You are hot</h1>
-  <div class="embers"></div>
-
-  <script>
-    // Trigger the burning effect after page loads
-    setTimeout(() => {
-      // After 1 second, let the effect begin
-    }, 1000);  // Set delay before triggering (optional)
-  </script>
+  <img id="gif" src="fire.gif" alt="Description of the GIF">
 </body>
 </html>

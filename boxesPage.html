@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose a Color</title>
+  <style>
+    /* Full white background */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;  /* Vertically center */
+      justify-content: center;  /* Horizontally center */
+      flex-direction: column;  /* Stack elements vertically */
+    }
+
+    /* Box container */
+    #boxes {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+    }
+
+    /* Style for the boxes */
+    .box {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Add hover effect for the boxes */
+    .box:hover {
+      transform: scale(1.1);
+    }
+
+    /* Colors for the boxes */
+    #greenBox {
+      background-color: #77DD77; /* Pastel Green */
+    }
+
+    #blueBox {
+      background-color: #77B5FE; /* Pastel Blue */
+    }
+
+    #pinkBox {
+      background-color: #FFB6C1; /* Pastel Pink */
+    }
+  </style>
+</head>
+<body>
+  <div id="boxes">
+    <a href="greenPage.html" class="box" id="greenBox"></a>
+    <a href="bluePage.html" class="box" id="blueBox"></a>
+    <a href="pinkPage.html" class="box" id="pinkBox"></a>
+  </div>
+</body>
+</html>
